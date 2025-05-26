@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PC Engine - Loja Gamer</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <!-- Estilo customizado -->
+  <style>
+    body {
+      background-color: #0d1117;
+      color: #ffffff;
+    }
+
+    .bg-orange {
+      background-color: #0d6efd; /* azul padrão Bootstrap */
+    }
+
+    .navbar-dark {
+      background-color: #000000 !important;
+    }
+
+    .navbar-nav .nav-link {
+      transition: all 0.3s;
+      color: #ffffff !important;
+    }
+
+    .navbar-nav .nav-link:hover {
+      transform: translateY(-2px);
+      color: #0d6efd !important;
+    }
+
+    .product-card {
+      transition: transform 0.3s, box-shadow 0.3s;
+      margin-bottom: 1.5rem;
+      background-color: #161b22;
+      color: white;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(13,110,253,0.4);
+    }
+
+    .product-image {
+      height: 200px;
+      object-fit: contain;
+      padding: 15px;
+    }
+
+    .price {
+      color: #0d6efd;
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #000000;
+      color: #ffffff;
+    }
+
+    footer a {
+      color: #0d6efd;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <section class="header-main py-3 bg-orange">
+    <div class="container">
+      <div class="row align-items-center g-3">
+        <!-- Logo -->
+        <div class="col-lg-3 d-flex align-items-center">
+  <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="Logo PC Engine" style="height:40px; margin-right: 10px;">
+  <h2 class="text-white mb-0">PC Engine</h2>
+</div>
+
+        <!-- Barra de Busca -->
+        <div class="col-lg-6">
+          <form class="d-flex">
+            <input type="search" class="form-control" placeholder="Buscar hardware gamer...">
+            <button class="btn btn-dark ms-2">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+
+        <!-- Menu Usuário -->
+        <div class="col-lg-3">
+          <div class="dropdown text-end">
+            <a href="#" class="text-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown">
+              <i class="fas fa-user me-2"></i>Olá, Visitante!
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Login</a></li>
+              <li><a class="dropdown-item" href="cadastro.html">Registrar</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</header>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm py-3">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-primary" href="#">PC Engine</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center gap-2" href="#">
+                <i class="fas fa-box-open"></i> Produtos
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center gap-2" href="#">
+                <i class="fas fa-shopping-cart"></i> Carrinho
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center gap-2" href="#">
+                <i class="fas fa-receipt"></i> Pedidos
+              </a>
+            </li>
+          </ul>
+    </div>
+  </div>
+</nav>
+
+
+<section class="promo-banner">
+  <img src="banner.jpeg" alt="Mega Promoção Gamer" class="img-fluid w-100" style="max-height: 500px; object-fit: cover;">
+    </a>
+  </div>
+</section>
+
+<main class="my-5">
+  <div class="container">
+    <h2 class="mb-4 text-center">Hardware Gamer em Destaque</h2>
+    <div class="row g-4">
+      
+      <!-- Teclado Mecânico -->
+      <div class="col-md-4">
+        <div class="card product-card h-100">
+          <img src="teclado.png" class="card-img-top product-image" alt="Teclado Mecânico">
+          <div class="card-body">
+            <h5 class="card-title">Teclado Mecânico RGB</h5>
+            <p class="card-text">Teclado mecânico gamer com iluminação RGB, switches azuis e estrutura em alumínio.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="price">R$ 399,00</span>
+              <button class="btn btn-primary">Comprar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Placa de Vídeo -->
+      <div class="col-md-4">
+        <div class="card product-card h-100">
+          <img src="placa de video.png" class="card-img-top product-image" alt="Placa de Vídeo">
+          <div class="card-body">
+            <h5 class="card-title">Placa de Vídeo RTX 4070</h5>
+            <p class="card-text">GPU NVIDIA RTX 4070 com 12GB GDDR6X, Ray Tracing e DLSS 3 para máxima performance.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="price">R$ 4.999,00</span>
+              <button class="btn btn-primary">Comprar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cadeira Gamer -->
+      <div class="col-md-4">
+        <div class="card product-card h-100">
+          <img src="cadeira.png" class="card-img-top product-image" alt="Cadeira Gamer">
+          <div class="card-body">
+            <h5 class="card-title">Cadeira Gamer Mad Racer</h5>
+            <p class="card-text">Cadeira com design ergonômico, estofado premium e ajuste de altura e inclinação.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="price">R$ 1.299,00</span>
+              <button class="btn btn-primary">Comprar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    
+<!-- Mouse Gamer -->
+<div class="col-md-4">
+  <div class="card product-card h-100">
+    <img src="mouse.png" class="card-img-top product-image" alt="Mouse Gamer RGB">
+    <div class="card-body">
+      <h5 class="card-title">Mouse Attack Shark</h5>
+      <p class="card-text">Mouse sem fio, sensor de alta precisão, 5 botões programáveis.</p>
+      <div class="d-flex justify-content-between align-items-center">
+        <span class="price">R$ 199,00</span>
+        <button class="btn btn-primary">Comprar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Monitor 240Hz -->
+<div class="col-md-4">
+  <div class="card product-card h-100">
+    <img src="monitor.png" class="card-img-top product-image" alt="Monitor Gamer 240Hz">
+    <div class="card-body">
+      <h5 class="card-title">Monitor Gamer 34" 240Hz</h5>
+      <p class="card-text">Monitor curvo com taxa de atualização ultra-rápida, tempo de resposta de 1ms e painel IPS.</p>
+      <div class="d-flex justify-content-between align-items-center">
+        <span class="price">R$ 2.499,00</span>
+        <button class="btn btn-primary">Comprar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Headset Gamer -->
+<div class="col-md-4">
+  <div class="card product-card h-100">
+    <img src="headset.png" class="card-img-top product-image" alt="Headset Gamer">
+    <div class="card-body">
+      <h5 class="card-title">Headset Havit Fuxy H3</h5>
+      <p class="card-text">Headset sem fio com audio imersivo com som surround 7.1, microfone removível e design confortável.</p>
+      <div class="d-flex justify-content-between align-items-center">
+        <span class="price">R$ 349,00</span>
+        <button class="btn btn-primary">Comprar</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+  </div>
+</main>
+
+<footer class="py-4">
+  <div class="container">
+    <div class="row">
+      <!-- Institucional -->
+      <div class="col-md-4 mb-4">
+        <h5>Institucional</h5>
+        <ul class="list-unstyled">
+          <li><a href="#">Sobre Nós</a></li>
+          <li><a href="#">Políticas</a></li>
+        </ul>
+      </div>
+
+      <!-- Ajuda -->
+      <div class="col-md-4 mb-4">
+        <h5>Ajuda</h5>
+        <ul class="list-unstyled">
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </div>
+
+      <!-- Pagamentos -->
+      <div class="col-md-4 mb-4">
+        <h5>Pagamentos</h5>
+        <div class="d-flex gap-2">
+          <img src="https://cdn.awsli.com.br/206/206579/arquivos/forma-pagamento-mgv-novo.jpg" alt="Visa e Mastercard" class="img-fluid" style="height:200px">
+        </div>
+      </div>
+
+      <div class="text-center mt-4">
+        <p class="mb-0">© 2025 PC Engine - Loja Gamer</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Script do Carrinho -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const botoesCompra = document.querySelectorAll(".btn.btn-primary");
+
+    botoesCompra.forEach(botao => {
+      botao.addEventListener("click", function () {
+        const card = botao.closest(".card");
+        const nome = card.querySelector(".card-title").innerText;
+        const preco = card.querySelector(".price").innerText;
+        const imagem = card.querySelector("img").src;
+
+        const produto = {
+          nome: nome,
+          preco: preco,
+          imagem: imagem
+        };
+
+        let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+        carrinho.push(produto);
+        localStorage.setItem("carrinho", JSON.stringify(carrinho));
+
+        alert(`✅ "${nome}" adicionado ao carrinho!`);
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
