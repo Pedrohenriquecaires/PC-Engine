@@ -60,21 +60,50 @@
   </style>
 </head>
 <body>
+<header>
+  <section class="header-main py-3 bg-orange">
+    <div class="container">
+      <div class="row align-items-center g-3">
+        <!-- Logo -->
+        <div class="col-lg-3 d-flex align-items-center">
+  <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="Logo PC Engine" style="height:40px; margin-right: 10px;">
+  <h2 class="text-white mb-0">PC Engine</h2>
+</div>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <a class="navbar-brand d-flex align-items-center" href="index.html">
-      <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="Logo" width="30" height="30" class="mr-2" />
-      <strong>PC Engine</strong>
-    </a>
-    <form class="form-inline mx-auto">
-      <input class="form-control mr-sm-2" type="search" placeholder="Buscar hardware gamer..." aria-label="Search" style="width: 400px;">
-      <button class="btn btn-dark" type="submit"><i class="fas fa-search"></i></button>
-    </form>
-    <span class="navbar-text">
-      <i class="fas fa-user"></i> Olá, Visitante!
-    </span>
-  </nav>
+        <!-- Barra de Busca -->
+        <div class="col-lg-6">
+          <form class="d-flex">
+            <input type="search" class="form-control" placeholder="Buscar hardware gamer...">
+            <button class="btn btn-dark ms-2">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+
+        <!-- Menu Usuário -->
+        <div class="col-lg-3">
+          <div class="dropdown text-end">
+            <a href="#" class="text-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown">
+              <i class="fas fa-user me-2"></i>Olá, Visitante!
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="login.html">Entrar</a></li>
+              <li><a class="dropdown-item" href="cadastro.html">Registrar</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</header>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm py-3">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-primary" href="#">PC Engine</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
   <!-- Conteúdo -->
   <main class="container text-center">
